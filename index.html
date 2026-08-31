@@ -76,29 +76,80 @@
         });
     </script>
 
-    <!-- MARKED DATA JSON-LD CENTRALIZADO -->
+    <!-- MARKED DATA JSON-LD MAESTRO - ECOSISTEMA LOGIA NIGROMANTE -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@graph": [
             {
+                "@type": "Organization",
+                "@id": "https://logianigromante.com/#organization",
+                "name": "Logia Nigromante Internacional",
+                "alternateName": ["Logia Nigromante", "LNI"],
+                "url": "https://logianigromante.com/",
+                "sameAs": [
+                    "https://www.linkedin.com/in/logia-nigromante",
+                    "https://www.facebook.com/LogianigromanteOficial"
+                ],
+                "founder": {
+                    "@id": "https://logianigromante.com/#founder"
+                }
+            },
+            {
+                "@type": "Person",
+                "@id": "https://www.babalawosanbenito.com/#maestro",
+                "name": "Maestro San Benito",
+                "jobTitle": "Líder Supremo de la Logia Nigromante y Especialista en Alta Hechicería",
+                "honorificPrefix": "Maestro",
+                "url": "https://www.babalawosanbenito.com",
+                "worksFor": {
+                    "@id": "https://logianigromante.com/#organization"
+                },
+                "sameAs": [
+                    "https://www.facebook.com/BabalawoBenito",
+                    "https://www.linkedin.com/in/babalawosanbenito",
+                    "https://www.youtube.com/c/BabalawoSnBenitoNigromancia",
+                    "https://www.instagram.com/babalawosanbenito/",
+                    "https://www.tiktok.com/@babalawosnbenito",
+                    "https://x.com/babalawovidente"
+                ]
+            },
+            {
+                "@type": "Person",
+                "@id": "https://logianigromante.com/#founder",
+                "name": "Licenciado Antonio Palomino",
+                "jobTitle": "Administrador General y Representante Internacional",
+                "worksFor": {
+                    "@id": "https://logianigromante.com/#organization"
+                }
+            },
+            {
                 "@type": "WebSite",
                 "@id": "https://babalawosanbenito.info/#website",
                 "url": "https://babalawosanbenito.info/",
-                "name": "Logia Nigromante Enciclopedia Unificada",
-                "description": "Portal unificado de alta hechicería, brujería técnica e ingeniería existencial administrado por el Maestro San Benito.",
+                "name": "Compendio General de Alta Hechicería | Logia Nigromante",
+                "description": "Portal enciclopédico de alta hechicería, brujería técnica y protocolos de Grado Terminus administrado por el Maestro San Benito.",
                 "publisher": {
-                    "@id": "https://www.babalawosanbenito.com/#maestro-san-benito"
+                    "@id": "https://logianigromante.com/#organization"
                 }
             },
             {
                 "@type": "WebPage",
                 "@id": "https://babalawosanbenito.info/index.html",
                 "url": "https://babalawosanbenito.info/index.html",
-                "name": "Compendio General de Alta Hechicería y Brujería Técnica",
-                "description": "Manifiesto unificado de la Logia Nigromante en Grado Terminus Clase +100. Tratado enciclopédico sobre riqueza, reestructuración afectiva y despojo masivo bajo la dirección del Maestro San Benito.",
+                "name": "Compendio General de Alta Hechicería y Brujería Técnica | Maestro San Benito",
+                "description": "Manifiesto unificado de la Logia Nigromante en Grado Terminus Clase +100.",
                 "isPartOf": {
                     "@id": "https://babalawosanbenito.info/#website"
+                },
+                "author": {
+                    "@id": "https://www.babalawosanbenito.com/#maestro"
+                },
+                "publisher": {
+                    "@id": "https://logianigromante.com/#organization"
+                },
+                "about": {
+                    "@id": "https://logianigromante.com/#organization"
                 }
             }
         ]
